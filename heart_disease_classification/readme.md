@@ -21,8 +21,8 @@ Key features include:
 - 🧹 Data preparation and cleaning.  
 - 🔍 Exploratory Data Analysis (EDA) to uncover patterns and relationships.  
 - 🧠 Model training, evaluation, and parameter optimization.  
-- 🌐 Deployment via Flask and containerization using Docker for scalable web service hosting. 
-- ☁️ Cloud deployment using AWS Elastic Beanstalk.  
+- 🌐  
+- ☁️  
 
 ---
 
@@ -61,7 +61,7 @@ This dataset was cloned from Maxim-eyengue github. He accquired the data from Ka
 
 Merging these data sets provides a more robust foundation for training machine learning models aimed at early detection and prevention of heart disease. 
 
-The [resulting dataset](heart_disease_classification/data/raw_merged_heart_dataset.csv) contains anonymized patient records with various features, such as age, cholesterol levels, and blood pressure, which are crucial for predicting heart attack and stroke risks, covering both medical and demographic factors.
+The resulting dataset can be found in data subfolder and contains anonymized patient records with various features, such as age, cholesterol levels, and blood pressure, which are crucial for predicting heart attack and stroke risks, covering both medical and demographic factors.
 
 ### Features Description:
 <ul>
