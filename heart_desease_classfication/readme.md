@@ -1,4 +1,3 @@
-![Heart illustration](/images/heart.jpg)
 
 # ❤️ Heart Disease Prediction Project
 
@@ -10,14 +9,7 @@ This project focuses on predicting heart disease using machine learning models. 
 1. [📌 Project Overview](#-project-overview)
 2. [📁 Directory Structure](#-directory-structure)
 3. [❓ Problem Description](#-problem-description)
-4. [⚙️ Installation and Setup](#️-installation-and-setup)
-5. [▶️ Running the Project](#️-running-the-project)
-6. [🚀 Local Model Deployment](#-local-model-deployment)
-7. [🐳 Docker Containerization](#-docker-containerization)
-8. [☁️ AWS Elastic Beanstalk Deployment](#️-aws-elastic-beanstalk-deployment)
-9. [🧪 Testing the Application](#-testing-the-application)
-10. [🤝 Contributing](#-contributing)
-11. [📜 License](#-license)
+
 
 ---
 
@@ -40,19 +32,8 @@ Key features include:
 Heart-Disease-App/
 │
 ├── data/                          # Contains the dataset
-├── images/                        # Illustrations and deployment screenshots
-├── slides/                        # Project Presentation Powerpoint and PDF files
-├── .elasticbeanstalk/             # Contains the configuration file for the application deployment to AWS Elastic Beanstalk
-├── midterm_project.ipynb          # Jupyter Notebook with data preparation, analysis and model planning
 ├── train.py                       # Script for training and saving the model
 ├── predict.py                     # Web service for serving the model
-├── no_app_predict_test.py         # Test script for direct model testing
-├── predict_test.py                # Script for testing the web service
-├── predict_test_cloud.py          # Script for testing the app deployed on AWS Elastic Beanstalk
-├── Pipfile                        # Dependencies for pipenv
-├── Pipfile.lock                   # Locked versions of dependencies
-├── Dockerfile                     # Docker configuration for containerization
-├── LICENSE.txt                    # Project MIT License
 └── README.md                      # Project description and instructions
 ```
 
@@ -66,6 +47,8 @@ Heart-Disease-App/
 - 🌍 Provide an easily deployable service for real-world applications.  
 
 ### Heart Disease Prediction Dataset 📊
+This dataset was cloned from Maxim-eyengue github. He accquired the data from Kaggle community below.
+
 [The dataset](https://www.kaggle.com/datasets/mfarhaannazirkhan/heart-dataset/data) combines five publicly available heart disease datasets, with a total of 2181  records:
 
 <ul>
@@ -76,9 +59,9 @@ Heart-Disease-App/
     <li> 📝 Heart CSV Dataset: 290 records from Nandal, 2022</li>
 </ul>
 
-Merging these data sets provides a more robust foundation for training machine learning models aimed at early detection and prevention of heart disease. The [resulting dataset](/data/raw_merged_heart_dataset.csv) contains anonymized patient records with various features, such as age, cholesterol levels, and blood pressure, which are crucial for predicting heart attack and stroke risks, covering both medical and demographic factors.
+Merging these data sets provides a more robust foundation for training machine learning models aimed at early detection and prevention of heart disease. 
 
-![Heart features illustration](/images/Heart_Failure_.webp)
+The [resulting dataset](/data/raw_merged_heart_dataset.csv) contains anonymized patient records with various features, such as age, cholesterol levels, and blood pressure, which are crucial for predicting heart attack and stroke risks, covering both medical and demographic factors.
 
 ### Features Description:
 <ul>
@@ -111,10 +94,4 @@ Merging these data sets provides a more robust foundation for training machine l
     <li><strong>target</strong>: outcome variable for heart attack risk 
         [1: disease or more chance of heart attack, 0: normal or less chance of heart attack]</li>
 </ul>
-
---- 
-![Heart attack](/images/Heart.jpg)
-
-;) We will miss you...
----
 
