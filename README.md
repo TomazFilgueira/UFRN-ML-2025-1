@@ -204,10 +204,10 @@ There are 7 subplots below, each one represeting a categorical column from our d
 In this section i will describe how a combination of existing features can generate other ones. From my conception i always had in mind that heart disease is more likely to happen in elderly people (60 years old or older). Knowing this, it has been creating another categorical column meaning `ELDERLY`. This feature was created using the code below:
 
 ```
-df_reduced['elderly'] = df_reduced['age'].apply(lambda x: '>60' if x > 60 else '<60')
+df_reduced['elderly'] = df_reduced['age'].apply(lambda x: '>=60' if x >= 60 else '<60')
 ```
 
-Later i used `pd.crosstab()` method from pandas to analyze how data can be correlated when comparting sex (Male/Female) with elderly people (>60 , <60 ) versus target column (likely or unlikely to have heart disease)
+Later i used `pd.crosstab()` method from pandas to analyze how data can be correlated when comparting sex (Male/Female) with elderly people (>=60 , <60 ) versus target column (likely or unlikely to have heart disease)
 
 `pd.crosstab(df_reduced.target,[df_reduced.sex,df_reduced.elderly],margins=True)`
 
@@ -217,9 +217,9 @@ The output is shown below:
 sex	Female	                Male	All
 elderly	<60	>60	<60	>60	
 target					
-0	48	27	129	40	244
-1	52	22	90	16	180
-All	100	49	219	56	424
+0	48	31	119	50	244
+1	49	25	88	18	180
+All	93	56	207	68	424
 ```
 
 In the same way the crosstab can be plotted with clustered bar graph:
