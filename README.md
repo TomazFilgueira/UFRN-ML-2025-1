@@ -191,13 +191,13 @@ The reduced dataset now has **424 rows**.
 Next process in our checkpoint is to analyze Kernel Density Estimate (KDE for short). KDE plot means the probability distribution for each feature in our dataset.
 It is important to bear in mind that KDE plot only makes sense for numerical values.
 
-image...
+![Alt text](image/KDE_Plot.png)
 
 ## Plotting bar graph from categorical features:
 Similarly to numerical values in KDE plot, when analyzing categorical features we should use bar graph.
 There are 7 subplots below, each one represeting a categorical column from our dataset.
 
-image..
+![Alt text](image/bar_graph_cat_values.png)
 
 ## Feature Engineering
 
@@ -224,7 +224,7 @@ All	100	49	219	56	424
 
 In the same way the crosstab can be plotted with clustered bar graph:
 
-image...
+![Alt text](image/crosstab_target_sex_age.png)
 
 **Insights:** From the bargraph above surprisingly the dataset shows us the male people is more likely to have heart disease when they are younger than 60 years old!!
 
@@ -236,7 +236,7 @@ The closer correlation number to absolute 1, the stronger this feature is linked
 
 Correlation Matrix is shown below:
 
-image..
+![Alt text](image/corr_heart_diesase.png)
 
 **insights:** Despite only two features (`thalachh` and `oldpeaks`) have highest correlation with target columns (**0.26** and **-0.24** respectively) we will use all those numerical columns in our classification problem.
 
