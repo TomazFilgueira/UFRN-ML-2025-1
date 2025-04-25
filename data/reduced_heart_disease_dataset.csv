@@ -1,0 +1,425 @@
+age,sex,cp,trestbps,chol,fbs,restecg,thalachh,exang,oldpeak,slope,ca,thal,target,elderly
+63,Male,Asymptomatic,145,233,1,Normal,150,No,2.3,Upsloping,0,Normal,1,>=60
+37,Male,Non-anginal pain,130,250,0,ST-T wave abnormality,187,No,3.5,Upsloping,0,Fixed defect,1,<60
+41,Female,Atypical angina,130,204,0,Normal,172,No,1.4,Downsloping,0,Fixed defect,1,<60
+56,Male,Atypical angina,120,236,0,ST-T wave abnormality,178,No,0.8,Downsloping,0,Fixed defect,1,<60
+57,Female,Typical angina,120,354,0,ST-T wave abnormality,163,Yes,0.6,Downsloping,0,Fixed defect,1,<60
+57,Male,Typical angina,140,192,0,ST-T wave abnormality,148,No,0.4,Flat,0,Normal,1,<60
+56,Female,Atypical angina,140,294,0,Normal,153,No,1.3,Flat,0,Fixed defect,1,<60
+44,Male,Atypical angina,120,263,0,ST-T wave abnormality,173,No,0.0,Downsloping,0,Reversible defect,1,<60
+52,Male,Non-anginal pain,172,199,1,ST-T wave abnormality,162,No,0.5,Downsloping,0,Reversible defect,1,<60
+57,Male,Non-anginal pain,150,168,0,ST-T wave abnormality,174,No,1.6,Downsloping,0,Fixed defect,1,<60
+54,Male,Typical angina,140,239,0,ST-T wave abnormality,160,No,1.2,Downsloping,0,Fixed defect,1,<60
+48,Female,Non-anginal pain,130,275,0,ST-T wave abnormality,139,No,0.2,Downsloping,0,Fixed defect,1,<60
+49,Male,Atypical angina,130,266,0,ST-T wave abnormality,171,No,0.6,Downsloping,0,Fixed defect,1,<60
+64,Male,Asymptomatic,110,211,0,Normal,144,Yes,1.8,Flat,0,Fixed defect,1,>=60
+58,Female,Asymptomatic,150,283,1,Normal,162,No,1.0,Downsloping,0,Fixed defect,1,<60
+50,Female,Non-anginal pain,120,219,0,ST-T wave abnormality,158,No,1.6,Flat,0,Fixed defect,1,<60
+58,Female,Non-anginal pain,120,340,0,ST-T wave abnormality,172,No,0.0,Downsloping,0,Fixed defect,1,<60
+66,Female,Asymptomatic,150,226,0,ST-T wave abnormality,114,No,2.6,Upsloping,0,Fixed defect,1,>=60
+43,Male,Typical angina,150,247,0,ST-T wave abnormality,171,No,1.5,Downsloping,0,Fixed defect,1,<60
+69,Female,Asymptomatic,140,239,0,ST-T wave abnormality,151,No,1.8,Downsloping,2,Fixed defect,1,>=60
+59,Male,Typical angina,135,234,0,ST-T wave abnormality,161,No,0.5,Flat,0,Reversible defect,1,<60
+44,Male,Non-anginal pain,130,233,0,ST-T wave abnormality,179,Yes,0.4,Downsloping,0,Fixed defect,1,<60
+42,Male,Typical angina,140,226,0,ST-T wave abnormality,178,No,0.0,Downsloping,0,Fixed defect,1,<60
+61,Male,Non-anginal pain,150,243,1,ST-T wave abnormality,137,Yes,1.0,Flat,0,Fixed defect,1,>=60
+40,Male,Asymptomatic,140,199,0,ST-T wave abnormality,178,Yes,1.4,Downsloping,0,Reversible defect,1,<60
+71,Female,Atypical angina,160,302,0,ST-T wave abnormality,162,No,0.4,Downsloping,2,Fixed defect,1,>=60
+59,Male,Non-anginal pain,150,212,1,ST-T wave abnormality,157,No,1.6,Downsloping,0,Fixed defect,1,<60
+51,Male,Non-anginal pain,110,175,0,ST-T wave abnormality,123,No,0.6,Downsloping,0,Fixed defect,1,<60
+65,Female,Non-anginal pain,140,417,1,Normal,157,No,0.8,Downsloping,1,Fixed defect,1,>=60
+53,Male,Non-anginal pain,130,197,1,Normal,152,No,1.2,Upsloping,0,Fixed defect,1,<60
+41,Female,Atypical angina,105,198,0,ST-T wave abnormality,168,No,0.0,Downsloping,1,Fixed defect,1,<60
+65,Male,Typical angina,120,177,0,ST-T wave abnormality,140,No,0.4,Downsloping,0,Reversible defect,1,>=60
+44,Male,Atypical angina,130,219,0,Normal,188,No,0.0,Downsloping,0,Fixed defect,1,<60
+54,Male,Non-anginal pain,125,273,0,Normal,152,No,0.5,Upsloping,1,Fixed defect,1,<60
+51,Male,Asymptomatic,125,213,0,Normal,125,Yes,1.4,Downsloping,1,Fixed defect,1,<60
+46,Female,Non-anginal pain,142,177,0,Normal,160,Yes,1.4,Upsloping,0,Fixed defect,1,<60
+54,Female,Non-anginal pain,135,304,1,ST-T wave abnormality,170,No,0.0,Downsloping,0,Fixed defect,1,<60
+54,Male,Non-anginal pain,150,232,0,Normal,165,No,1.6,Downsloping,0,Reversible defect,1,<60
+65,Female,Non-anginal pain,155,269,0,ST-T wave abnormality,148,No,0.8,Downsloping,0,Fixed defect,1,>=60
+65,Female,Non-anginal pain,160,360,0,Normal,151,No,0.8,Downsloping,0,Fixed defect,1,>=60
+51,Female,Non-anginal pain,140,308,0,Normal,142,No,1.5,Downsloping,1,Fixed defect,1,<60
+48,Male,Atypical angina,130,245,0,Normal,180,No,0.2,Flat,0,Fixed defect,1,<60
+45,Male,Typical angina,104,208,0,Normal,148,Yes,3.0,Flat,0,Fixed defect,1,<60
+53,Female,Typical angina,130,264,0,Normal,143,No,0.4,Flat,0,Fixed defect,1,<60
+39,Male,Non-anginal pain,140,321,0,Normal,182,No,0.0,Downsloping,0,Fixed defect,1,<60
+52,Male,Atypical angina,120,325,0,ST-T wave abnormality,172,No,0.2,Downsloping,0,Fixed defect,1,<60
+44,Male,Non-anginal pain,140,235,0,Normal,180,No,0.0,Downsloping,0,Fixed defect,1,<60
+47,Male,Non-anginal pain,138,257,0,Normal,156,No,0.0,Downsloping,0,Fixed defect,1,<60
+53,Female,Typical angina,138,234,0,Normal,160,No,0.0,Downsloping,0,Fixed defect,1,<60
+51,Female,Non-anginal pain,130,256,0,Normal,149,No,0.5,Downsloping,0,Fixed defect,1,<60
+66,Male,Typical angina,120,302,0,Normal,151,No,0.4,Flat,0,Fixed defect,1,>=60
+62,Male,Non-anginal pain,130,231,0,ST-T wave abnormality,146,No,1.8,Flat,3,Reversible defect,1,>=60
+44,Female,Non-anginal pain,108,141,0,ST-T wave abnormality,175,No,0.6,Flat,0,Fixed defect,1,<60
+63,Female,Non-anginal pain,135,252,0,Normal,172,No,0.0,Downsloping,0,Fixed defect,1,>=60
+52,Male,Atypical angina,134,201,0,ST-T wave abnormality,158,No,0.8,Downsloping,1,Fixed defect,1,<60
+48,Male,Typical angina,122,222,0,Normal,186,No,0.0,Downsloping,0,Fixed defect,1,<60
+45,Male,Typical angina,115,260,0,Normal,185,No,0.0,Downsloping,0,Fixed defect,1,<60
+34,Male,Asymptomatic,118,182,0,Normal,174,No,0.0,Downsloping,0,Fixed defect,1,<60
+57,Female,Typical angina,128,303,0,Normal,159,No,0.0,Downsloping,1,Fixed defect,1,<60
+71,Female,Non-anginal pain,110,265,1,Normal,130,No,0.0,Downsloping,1,Fixed defect,1,>=60
+54,Male,Atypical angina,108,309,0,ST-T wave abnormality,156,No,0.0,Downsloping,0,Reversible defect,1,<60
+52,Male,Asymptomatic,118,186,0,Normal,190,No,0.0,Flat,0,Normal,1,<60
+41,Male,Atypical angina,135,203,0,ST-T wave abnormality,132,No,0.0,Flat,0,Normal,1,<60
+58,Male,Non-anginal pain,140,211,1,Normal,165,No,0.0,Downsloping,0,Fixed defect,1,<60
+35,Female,Typical angina,138,183,0,ST-T wave abnormality,182,No,1.4,Downsloping,0,Fixed defect,1,<60
+51,Male,Non-anginal pain,100,222,0,ST-T wave abnormality,143,Yes,1.2,Flat,0,Fixed defect,1,<60
+45,Female,Atypical angina,130,234,0,Normal,175,No,0.6,Flat,0,Fixed defect,1,<60
+44,Male,Atypical angina,120,220,0,ST-T wave abnormality,170,No,0.0,Downsloping,0,Fixed defect,1,<60
+62,Female,Typical angina,124,209,0,ST-T wave abnormality,163,No,0.0,Downsloping,0,Fixed defect,1,>=60
+54,Male,Non-anginal pain,120,258,0,Normal,147,No,0.4,Flat,0,Reversible defect,1,<60
+51,Male,Non-anginal pain,94,227,0,ST-T wave abnormality,154,Yes,0.0,Downsloping,1,Reversible defect,1,<60
+29,Male,Atypical angina,130,204,0,Normal,202,No,0.0,Downsloping,0,Fixed defect,1,<60
+51,Male,Typical angina,140,261,0,Normal,186,Yes,0.0,Downsloping,0,Fixed defect,1,<60
+43,Female,Non-anginal pain,122,213,0,ST-T wave abnormality,165,No,0.2,Flat,0,Fixed defect,1,<60
+55,Female,Atypical angina,135,250,0,Normal,161,No,1.4,Flat,0,Fixed defect,1,<60
+51,Male,Non-anginal pain,125,245,1,Normal,166,No,2.4,Flat,0,Fixed defect,1,<60
+59,Male,Atypical angina,140,221,0,ST-T wave abnormality,164,Yes,0.0,Downsloping,0,Fixed defect,1,<60
+52,Male,Atypical angina,128,205,1,ST-T wave abnormality,184,No,0.0,Downsloping,0,Fixed defect,1,<60
+58,Male,Non-anginal pain,105,240,0,Normal,154,Yes,0.6,Flat,0,Reversible defect,1,<60
+41,Male,Non-anginal pain,112,250,0,ST-T wave abnormality,179,No,0.0,Downsloping,0,Fixed defect,1,<60
+45,Male,Atypical angina,128,308,0,Normal,170,No,0.0,Downsloping,0,Fixed defect,1,<60
+60,Female,Non-anginal pain,102,318,0,ST-T wave abnormality,160,No,0.0,Downsloping,1,Fixed defect,1,>=60
+52,Male,Asymptomatic,152,298,1,ST-T wave abnormality,178,No,1.2,Flat,0,Reversible defect,1,<60
+42,Female,Typical angina,102,265,0,Normal,122,No,0.6,Flat,0,Fixed defect,1,<60
+67,Female,Non-anginal pain,115,564,0,Normal,160,No,1.6,Flat,0,Reversible defect,1,>=60
+68,Male,Non-anginal pain,118,277,0,ST-T wave abnormality,151,No,1.0,Downsloping,1,Reversible defect,1,>=60
+46,Male,Atypical angina,101,197,1,ST-T wave abnormality,156,No,0.0,Downsloping,0,Reversible defect,1,<60
+54,Female,Non-anginal pain,110,214,0,ST-T wave abnormality,158,No,1.6,Flat,0,Fixed defect,1,<60
+58,Female,Typical angina,100,248,0,Normal,122,No,1.0,Flat,0,Fixed defect,1,<60
+48,Male,Non-anginal pain,124,255,1,ST-T wave abnormality,175,No,0.0,Downsloping,2,Fixed defect,1,<60
+57,Male,Typical angina,132,207,0,ST-T wave abnormality,168,Yes,0.0,Downsloping,0,Reversible defect,1,<60
+52,Male,Non-anginal pain,138,223,0,ST-T wave abnormality,169,No,0.0,Downsloping,4,Fixed defect,1,<60
+54,Female,Atypical angina,132,288,1,Normal,159,Yes,0.0,Downsloping,1,Fixed defect,1,<60
+45,Female,Atypical angina,112,160,0,ST-T wave abnormality,138,No,0.0,Flat,0,Fixed defect,1,<60
+53,Male,Typical angina,142,226,0,Normal,111,Yes,0.0,Downsloping,0,Reversible defect,1,<60
+62,Female,Typical angina,140,394,0,Normal,157,No,1.2,Flat,0,Fixed defect,1,>=60
+52,Male,Typical angina,108,233,1,ST-T wave abnormality,147,No,0.1,Downsloping,3,Reversible defect,1,<60
+43,Male,Non-anginal pain,130,315,0,ST-T wave abnormality,162,No,1.9,Downsloping,1,Fixed defect,1,<60
+53,Male,Non-anginal pain,130,246,1,Normal,173,No,0.0,Downsloping,3,Fixed defect,1,<60
+42,Male,Asymptomatic,148,244,0,Normal,178,No,0.8,Downsloping,2,Fixed defect,1,<60
+59,Male,Asymptomatic,178,270,0,Normal,145,No,4.2,Upsloping,0,Reversible defect,1,<60
+63,Female,Atypical angina,140,195,0,ST-T wave abnormality,179,No,0.0,Downsloping,2,Fixed defect,1,>=60
+42,Male,Non-anginal pain,120,240,1,ST-T wave abnormality,194,No,0.8,Upsloping,0,Reversible defect,1,<60
+50,Male,Non-anginal pain,129,196,0,ST-T wave abnormality,163,No,0.0,Downsloping,0,Fixed defect,1,<60
+68,Female,Non-anginal pain,120,211,0,Normal,115,No,1.5,Flat,0,Fixed defect,1,>=60
+69,Male,Asymptomatic,160,234,1,Normal,131,No,0.1,Flat,1,Fixed defect,1,>=60
+45,Female,Typical angina,138,236,0,Normal,152,Yes,0.2,Flat,0,Fixed defect,1,<60
+50,Female,Atypical angina,120,244,0,ST-T wave abnormality,162,No,1.1,Downsloping,0,Fixed defect,1,<60
+50,Female,Typical angina,110,254,0,Normal,159,No,0.0,Downsloping,0,Fixed defect,1,<60
+64,Female,Typical angina,180,325,0,ST-T wave abnormality,154,Yes,0.0,Downsloping,0,Fixed defect,1,>=60
+57,Male,Non-anginal pain,150,126,1,ST-T wave abnormality,173,No,0.2,Downsloping,1,Reversible defect,1,<60
+64,Female,Non-anginal pain,140,313,0,ST-T wave abnormality,133,No,0.2,Downsloping,0,Reversible defect,1,>=60
+43,Male,Typical angina,110,211,0,ST-T wave abnormality,161,No,0.0,Downsloping,0,Reversible defect,1,<60
+55,Male,Atypical angina,130,262,0,ST-T wave abnormality,155,No,0.0,Downsloping,0,Fixed defect,1,<60
+37,Female,Non-anginal pain,120,215,0,ST-T wave abnormality,170,No,0.0,Downsloping,0,Fixed defect,1,<60
+41,Male,Non-anginal pain,130,214,0,Normal,168,No,2.0,Flat,0,Fixed defect,1,<60
+56,Male,Asymptomatic,120,193,0,Normal,162,No,1.9,Flat,0,Reversible defect,1,<60
+46,Female,Atypical angina,105,204,0,ST-T wave abnormality,172,No,0.0,Downsloping,0,Fixed defect,1,<60
+46,Female,Typical angina,138,243,0,Normal,152,Yes,0.0,Flat,0,Fixed defect,1,<60
+64,Female,Typical angina,130,303,0,ST-T wave abnormality,122,No,2.0,Flat,2,Fixed defect,1,>=60
+59,Male,Typical angina,138,271,0,Normal,182,No,0.0,Downsloping,0,Fixed defect,1,<60
+41,Female,Non-anginal pain,112,268,0,Normal,172,Yes,0.0,Downsloping,0,Fixed defect,1,<60
+54,Female,Non-anginal pain,108,267,0,Normal,167,No,0.0,Downsloping,0,Fixed defect,1,<60
+39,Female,Non-anginal pain,94,199,0,ST-T wave abnormality,179,No,0.0,Downsloping,0,Fixed defect,1,<60
+34,Female,Atypical angina,118,210,0,ST-T wave abnormality,192,No,0.7,Downsloping,0,Fixed defect,1,<60
+47,Male,Typical angina,112,204,0,ST-T wave abnormality,143,No,0.1,Downsloping,0,Fixed defect,1,<60
+67,Female,Non-anginal pain,152,277,0,ST-T wave abnormality,172,No,0.0,Downsloping,1,Fixed defect,1,>=60
+52,Female,Non-anginal pain,136,196,0,Normal,169,No,0.1,Flat,0,Fixed defect,1,<60
+74,Female,Atypical angina,120,269,0,Normal,121,Yes,0.2,Downsloping,1,Fixed defect,1,>=60
+54,Female,Non-anginal pain,160,201,0,ST-T wave abnormality,163,No,0.0,Downsloping,1,Fixed defect,1,<60
+49,Female,Atypical angina,134,271,0,ST-T wave abnormality,162,No,0.0,Flat,0,Fixed defect,1,<60
+42,Male,Atypical angina,120,295,0,ST-T wave abnormality,162,No,0.0,Downsloping,0,Fixed defect,1,<60
+41,Male,Atypical angina,110,235,0,ST-T wave abnormality,153,No,0.0,Downsloping,0,Fixed defect,1,<60
+41,Female,Atypical angina,126,306,0,ST-T wave abnormality,163,No,0.0,Downsloping,0,Fixed defect,1,<60
+49,Female,Typical angina,130,269,0,ST-T wave abnormality,163,No,0.0,Downsloping,0,Fixed defect,1,<60
+60,Female,Non-anginal pain,120,178,1,ST-T wave abnormality,96,No,0.0,Downsloping,0,Fixed defect,1,>=60
+62,Male,Atypical angina,128,208,1,Normal,140,No,0.0,Downsloping,0,Fixed defect,1,>=60
+57,Male,Typical angina,110,201,0,ST-T wave abnormality,126,Yes,1.5,Flat,0,Normal,1,<60
+64,Male,Typical angina,128,263,0,ST-T wave abnormality,105,Yes,0.2,Flat,1,Reversible defect,1,>=60
+51,Female,Non-anginal pain,120,295,0,Normal,157,No,0.6,Downsloping,0,Fixed defect,1,<60
+43,Male,Typical angina,115,303,0,ST-T wave abnormality,181,No,1.2,Flat,0,Fixed defect,1,<60
+42,Female,Non-anginal pain,120,209,0,ST-T wave abnormality,173,No,0.0,Flat,0,Fixed defect,1,<60
+67,Female,Typical angina,106,223,0,ST-T wave abnormality,142,No,0.3,Downsloping,2,Fixed defect,1,>=60
+76,Female,Non-anginal pain,140,197,0,Left ventricular hypertrophy,116,No,1.1,Flat,0,Fixed defect,1,>=60
+70,Male,Atypical angina,156,245,0,Normal,143,No,0.0,Downsloping,0,Fixed defect,1,>=60
+44,Female,Non-anginal pain,118,242,0,ST-T wave abnormality,149,No,0.3,Flat,1,Fixed defect,1,<60
+60,Female,Asymptomatic,150,240,0,ST-T wave abnormality,171,No,0.9,Downsloping,0,Fixed defect,1,>=60
+44,Male,Non-anginal pain,120,226,0,ST-T wave abnormality,169,No,0.0,Downsloping,0,Fixed defect,1,<60
+42,Male,Non-anginal pain,130,180,0,ST-T wave abnormality,150,No,0.0,Downsloping,0,Fixed defect,1,<60
+66,Male,Typical angina,160,228,0,Normal,138,No,2.3,Downsloping,0,Normal,1,>=60
+71,Female,Typical angina,112,149,0,ST-T wave abnormality,125,No,1.6,Flat,0,Fixed defect,1,>=60
+64,Male,Asymptomatic,170,227,0,Normal,155,No,0.6,Flat,0,Reversible defect,1,>=60
+66,Female,Non-anginal pain,146,278,0,Normal,152,No,0.0,Flat,1,Fixed defect,1,>=60
+39,Female,Non-anginal pain,138,220,0,ST-T wave abnormality,152,No,0.0,Flat,0,Fixed defect,1,<60
+58,Female,Typical angina,130,197,0,ST-T wave abnormality,131,No,0.6,Flat,0,Fixed defect,1,<60
+47,Male,Non-anginal pain,130,253,0,ST-T wave abnormality,179,No,0.0,Downsloping,0,Fixed defect,1,<60
+35,Male,Atypical angina,122,192,0,ST-T wave abnormality,174,No,0.0,Downsloping,0,Fixed defect,1,<60
+58,Male,Atypical angina,125,220,0,ST-T wave abnormality,144,No,0.4,Flat,4,Reversible defect,1,<60
+56,Male,Atypical angina,130,221,0,Normal,163,No,0.0,Downsloping,0,Reversible defect,1,<60
+56,Male,Atypical angina,120,240,0,ST-T wave abnormality,169,No,0.0,Upsloping,0,Fixed defect,1,<60
+55,Female,Atypical angina,132,342,0,ST-T wave abnormality,166,No,1.2,Downsloping,0,Fixed defect,1,<60
+41,Male,Atypical angina,120,157,0,ST-T wave abnormality,182,No,0.0,Downsloping,0,Fixed defect,1,<60
+38,Male,Non-anginal pain,138,175,0,ST-T wave abnormality,173,No,0.0,Downsloping,4,Fixed defect,1,<60
+67,Male,Typical angina,160,286,0,Normal,108,Yes,1.5,Flat,3,Fixed defect,0,>=60
+67,Male,Typical angina,120,229,0,Normal,129,Yes,2.6,Flat,2,Reversible defect,0,>=60
+62,Female,Typical angina,140,268,0,Normal,160,No,3.6,Upsloping,2,Fixed defect,0,>=60
+63,Male,Typical angina,130,254,0,Normal,147,No,1.4,Flat,1,Reversible defect,0,>=60
+53,Male,Typical angina,140,203,1,Normal,155,Yes,3.1,Upsloping,0,Reversible defect,0,<60
+56,Male,Non-anginal pain,130,256,1,Normal,142,Yes,0.6,Flat,1,Normal,0,<60
+48,Male,Atypical angina,110,229,0,ST-T wave abnormality,168,No,1.0,Upsloping,0,Reversible defect,0,<60
+58,Male,Atypical angina,120,284,0,Normal,160,No,1.8,Flat,0,Fixed defect,0,<60
+58,Male,Non-anginal pain,132,224,0,Normal,173,No,3.2,Downsloping,2,Reversible defect,0,<60
+60,Male,Typical angina,130,206,0,Normal,132,Yes,2.4,Flat,2,Reversible defect,0,>=60
+40,Male,Typical angina,110,167,0,Normal,114,Yes,2.0,Flat,0,Reversible defect,0,<60
+60,Male,Typical angina,117,230,1,ST-T wave abnormality,160,Yes,1.4,Downsloping,2,Reversible defect,0,>=60
+64,Male,Non-anginal pain,140,335,0,ST-T wave abnormality,158,No,0.0,Downsloping,0,Fixed defect,0,>=60
+43,Male,Typical angina,120,177,0,Normal,120,Yes,2.5,Flat,0,Reversible defect,0,<60
+57,Male,Typical angina,150,276,0,Normal,112,Yes,0.6,Flat,1,Normal,0,<60
+55,Male,Typical angina,132,353,0,ST-T wave abnormality,132,Yes,1.2,Flat,1,Reversible defect,0,<60
+65,Female,Typical angina,150,225,0,Normal,114,No,1.0,Flat,3,Reversible defect,0,>=60
+61,Female,Typical angina,130,330,0,Normal,169,No,0.0,Downsloping,0,Fixed defect,0,>=60
+58,Male,Non-anginal pain,112,230,0,Normal,165,No,2.5,Flat,1,Reversible defect,0,<60
+50,Male,Typical angina,150,243,0,Normal,128,No,2.6,Flat,0,Reversible defect,0,<60
+44,Male,Typical angina,112,290,0,Normal,153,No,0.0,Downsloping,1,Fixed defect,0,<60
+60,Male,Typical angina,130,253,0,ST-T wave abnormality,144,Yes,1.4,Downsloping,1,Reversible defect,0,>=60
+54,Male,Typical angina,124,266,0,Normal,109,Yes,2.2,Flat,1,Reversible defect,0,<60
+50,Male,Non-anginal pain,140,233,0,ST-T wave abnormality,163,No,0.6,Flat,1,Reversible defect,0,<60
+41,Male,Typical angina,110,172,0,Normal,158,No,0.0,Downsloping,0,Reversible defect,0,<60
+51,Female,Typical angina,130,305,0,ST-T wave abnormality,142,Yes,1.2,Flat,0,Reversible defect,0,<60
+58,Male,Typical angina,128,216,0,Normal,131,Yes,2.2,Flat,3,Reversible defect,0,<60
+54,Male,Typical angina,120,188,0,ST-T wave abnormality,113,No,1.4,Flat,1,Reversible defect,0,<60
+60,Male,Typical angina,145,282,0,Normal,142,Yes,2.8,Flat,2,Reversible defect,0,>=60
+60,Male,Non-anginal pain,140,185,0,Normal,155,No,3.0,Flat,0,Fixed defect,0,>=60
+59,Male,Typical angina,170,326,0,Normal,140,Yes,3.4,Upsloping,0,Reversible defect,0,<60
+46,Male,Non-anginal pain,150,231,0,ST-T wave abnormality,147,No,3.6,Flat,0,Fixed defect,0,<60
+67,Male,Typical angina,125,254,1,ST-T wave abnormality,163,No,0.2,Flat,2,Reversible defect,0,>=60
+62,Male,Typical angina,120,267,0,ST-T wave abnormality,99,Yes,1.8,Flat,2,Reversible defect,0,>=60
+65,Male,Typical angina,110,248,0,Normal,158,No,0.6,Downsloping,2,Normal,0,>=60
+44,Male,Typical angina,110,197,0,Normal,177,No,0.0,Downsloping,1,Fixed defect,0,<60
+60,Male,Typical angina,125,258,0,Normal,141,Yes,2.8,Flat,1,Reversible defect,0,>=60
+58,Male,Typical angina,150,270,0,Normal,111,Yes,0.8,Downsloping,0,Reversible defect,0,<60
+68,Male,Non-anginal pain,180,274,1,Normal,150,Yes,1.6,Flat,0,Reversible defect,0,>=60
+62,Female,Typical angina,160,164,0,Normal,145,No,6.2,Upsloping,3,Reversible defect,0,>=60
+52,Male,Typical angina,128,255,0,ST-T wave abnormality,161,Yes,0.0,Downsloping,1,Reversible defect,0,<60
+59,Male,Typical angina,110,239,0,Normal,142,Yes,1.2,Flat,1,Reversible defect,0,<60
+60,Female,Typical angina,150,258,0,Normal,157,No,2.6,Flat,2,Reversible defect,0,>=60
+49,Male,Non-anginal pain,120,188,0,ST-T wave abnormality,139,No,2.0,Flat,3,Reversible defect,0,<60
+59,Male,Typical angina,140,177,0,ST-T wave abnormality,162,Yes,0.0,Downsloping,1,Reversible defect,0,<60
+57,Male,Non-anginal pain,128,229,0,Normal,150,No,0.4,Flat,1,Reversible defect,0,<60
+61,Male,Typical angina,120,260,0,ST-T wave abnormality,140,Yes,3.6,Flat,1,Reversible defect,0,>=60
+39,Male,Typical angina,118,219,0,ST-T wave abnormality,140,No,1.2,Flat,0,Reversible defect,0,<60
+61,Female,Typical angina,145,307,0,Normal,146,Yes,1.0,Flat,0,Reversible defect,0,>=60
+56,Male,Typical angina,125,249,1,Normal,144,Yes,1.2,Flat,1,Fixed defect,0,<60
+43,Female,Typical angina,132,341,1,Normal,136,Yes,3.0,Flat,0,Reversible defect,0,<60
+62,Female,Non-anginal pain,130,263,0,ST-T wave abnormality,97,No,1.2,Flat,1,Reversible defect,0,>=60
+63,Male,Typical angina,130,330,1,Normal,132,Yes,1.8,Downsloping,3,Reversible defect,0,>=60
+65,Male,Typical angina,135,254,0,Normal,127,No,2.8,Flat,1,Reversible defect,0,>=60
+48,Male,Typical angina,130,256,1,Normal,150,Yes,0.0,Downsloping,2,Reversible defect,0,<60
+63,Female,Typical angina,150,407,0,Normal,154,No,4.0,Flat,3,Reversible defect,0,>=60
+55,Male,Typical angina,140,217,0,ST-T wave abnormality,111,Yes,5.6,Upsloping,0,Reversible defect,0,<60
+65,Male,Asymptomatic,138,282,1,Normal,174,No,1.4,Flat,1,Fixed defect,0,>=60
+56,Female,Typical angina,200,288,1,Normal,133,Yes,4.0,Upsloping,2,Reversible defect,0,<60
+54,Male,Typical angina,110,239,0,ST-T wave abnormality,126,Yes,2.8,Flat,1,Reversible defect,0,<60
+70,Male,Typical angina,145,174,0,ST-T wave abnormality,125,Yes,2.6,Upsloping,0,Reversible defect,0,>=60
+62,Male,Atypical angina,120,281,0,Normal,103,No,1.4,Flat,1,Reversible defect,0,>=60
+35,Male,Typical angina,120,198,0,ST-T wave abnormality,130,Yes,1.6,Flat,0,Reversible defect,0,<60
+59,Male,Asymptomatic,170,288,0,Normal,159,No,0.2,Flat,0,Reversible defect,0,<60
+64,Male,Non-anginal pain,125,309,0,ST-T wave abnormality,131,Yes,1.8,Flat,0,Reversible defect,0,>=60
+47,Male,Non-anginal pain,108,243,0,ST-T wave abnormality,152,No,0.0,Downsloping,0,Fixed defect,0,<60
+57,Male,Typical angina,165,289,1,Normal,124,No,1.0,Flat,3,Reversible defect,0,<60
+55,Male,Typical angina,160,289,0,Normal,145,Yes,0.8,Flat,1,Reversible defect,0,<60
+64,Male,Typical angina,120,246,0,Normal,96,Yes,2.2,Upsloping,1,Fixed defect,0,>=60
+70,Male,Typical angina,130,322,0,Normal,109,No,2.4,Flat,3,Fixed defect,0,>=60
+51,Male,Typical angina,140,299,0,ST-T wave abnormality,173,Yes,1.6,Downsloping,0,Reversible defect,0,<60
+58,Male,Typical angina,125,300,0,Normal,171,No,0.0,Downsloping,2,Reversible defect,0,<60
+60,Male,Typical angina,140,293,0,Normal,170,No,1.2,Flat,2,Reversible defect,0,>=60
+77,Male,Typical angina,125,304,0,Normal,162,Yes,0.0,Downsloping,3,Fixed defect,0,>=60
+35,Male,Typical angina,126,282,0,Normal,156,Yes,0.0,Downsloping,0,Reversible defect,0,<60
+70,Male,Non-anginal pain,160,269,0,ST-T wave abnormality,112,Yes,2.9,Flat,1,Reversible defect,0,>=60
+59,Female,Typical angina,174,249,0,ST-T wave abnormality,143,Yes,0.0,Flat,0,Fixed defect,0,<60
+64,Male,Typical angina,145,212,0,Normal,132,No,2.0,Flat,2,Normal,0,>=60
+57,Male,Typical angina,152,274,0,ST-T wave abnormality,88,Yes,1.2,Flat,1,Reversible defect,0,<60
+56,Male,Typical angina,132,184,0,Normal,105,Yes,2.1,Flat,1,Normal,0,<60
+48,Male,Typical angina,124,274,0,Normal,166,No,0.5,Flat,0,Reversible defect,0,<60
+56,Female,Typical angina,134,409,0,Normal,150,Yes,1.9,Flat,2,Reversible defect,0,<60
+66,Male,Atypical angina,160,246,0,ST-T wave abnormality,120,Yes,0.0,Flat,3,Normal,0,>=60
+54,Male,Atypical angina,192,283,0,Normal,195,No,0.0,Downsloping,1,Reversible defect,0,<60
+69,Male,Non-anginal pain,140,254,0,Normal,146,No,2.0,Flat,3,Reversible defect,0,>=60
+51,Male,Typical angina,140,298,0,ST-T wave abnormality,122,Yes,4.2,Flat,3,Reversible defect,0,<60
+43,Male,Typical angina,132,247,1,Normal,143,Yes,0.1,Flat,4,Reversible defect,0,<60
+62,Female,Typical angina,138,294,1,ST-T wave abnormality,106,No,1.9,Flat,3,Fixed defect,0,>=60
+67,Male,Typical angina,100,299,0,Normal,125,Yes,0.9,Flat,2,Fixed defect,0,>=60
+59,Male,Asymptomatic,160,273,0,Normal,125,No,0.0,Downsloping,0,Fixed defect,0,<60
+45,Male,Typical angina,142,309,0,Normal,147,Yes,0.0,Flat,3,Reversible defect,0,<60
+58,Male,Typical angina,128,259,0,Normal,130,Yes,3.0,Flat,2,Reversible defect,0,<60
+50,Male,Typical angina,144,200,0,Normal,126,Yes,0.9,Flat,0,Reversible defect,0,<60
+62,Female,Typical angina,150,244,0,ST-T wave abnormality,154,Yes,1.4,Flat,0,Fixed defect,0,>=60
+38,Male,Asymptomatic,120,231,0,ST-T wave abnormality,182,Yes,3.8,Flat,0,Reversible defect,0,<60
+66,Female,Typical angina,178,228,1,ST-T wave abnormality,165,Yes,1.0,Flat,2,Reversible defect,0,>=60
+52,Male,Typical angina,112,230,0,ST-T wave abnormality,160,No,0.0,Downsloping,1,Fixed defect,0,<60
+53,Male,Typical angina,123,282,0,ST-T wave abnormality,95,Yes,2.0,Flat,2,Reversible defect,0,<60
+63,Female,Typical angina,108,269,0,ST-T wave abnormality,169,Yes,1.8,Flat,2,Fixed defect,0,>=60
+54,Male,Typical angina,110,206,0,Normal,108,Yes,0.0,Flat,1,Fixed defect,0,<60
+66,Male,Typical angina,112,212,0,Normal,132,Yes,0.1,Downsloping,1,Fixed defect,0,>=60
+55,Female,Typical angina,180,327,0,Left ventricular hypertrophy,117,Yes,3.4,Flat,0,Fixed defect,0,<60
+49,Male,Non-anginal pain,118,149,0,Normal,126,No,0.8,Downsloping,3,Fixed defect,0,<60
+54,Male,Typical angina,122,286,0,Normal,116,Yes,3.2,Flat,2,Fixed defect,0,<60
+56,Male,Typical angina,130,283,1,Normal,103,Yes,1.6,Upsloping,0,Reversible defect,0,<60
+46,Male,Typical angina,120,249,0,Normal,144,No,0.8,Downsloping,0,Reversible defect,0,<60
+61,Male,Asymptomatic,134,234,0,ST-T wave abnormality,145,No,2.6,Flat,2,Fixed defect,0,>=60
+67,Male,Typical angina,120,237,0,ST-T wave abnormality,71,No,1.0,Flat,0,Fixed defect,0,>=60
+58,Male,Typical angina,100,234,0,ST-T wave abnormality,156,No,0.1,Downsloping,1,Reversible defect,0,<60
+47,Male,Typical angina,110,275,0,Normal,118,Yes,1.0,Flat,1,Fixed defect,0,<60
+52,Male,Typical angina,125,212,0,ST-T wave abnormality,168,No,1.0,Downsloping,2,Reversible defect,0,<60
+58,Male,Typical angina,146,218,0,ST-T wave abnormality,105,No,2.0,Flat,1,Reversible defect,0,<60
+57,Male,Atypical angina,124,261,0,ST-T wave abnormality,141,No,0.3,Downsloping,0,Reversible defect,0,<60
+58,Female,Atypical angina,136,319,1,Normal,152,No,0.0,Downsloping,2,Fixed defect,0,<60
+61,Male,Typical angina,138,166,0,Normal,125,Yes,3.6,Flat,1,Fixed defect,0,>=60
+42,Male,Typical angina,136,315,0,ST-T wave abnormality,125,Yes,1.8,Flat,0,Normal,0,<60
+59,Male,Non-anginal pain,126,218,1,ST-T wave abnormality,134,No,2.2,Flat,1,Normal,0,<60
+40,Male,Typical angina,152,223,0,ST-T wave abnormality,181,No,0.0,Downsloping,0,Reversible defect,0,<60
+61,Male,Typical angina,140,207,0,Normal,138,Yes,1.9,Downsloping,1,Reversible defect,0,>=60
+46,Male,Typical angina,140,311,0,ST-T wave abnormality,120,Yes,1.8,Flat,2,Reversible defect,0,<60
+59,Male,Asymptomatic,134,204,0,ST-T wave abnormality,162,No,0.8,Downsloping,2,Fixed defect,0,<60
+57,Male,Atypical angina,154,232,0,Normal,164,No,0.0,Downsloping,1,Fixed defect,0,<60
+57,Male,Typical angina,110,335,0,ST-T wave abnormality,143,Yes,3.0,Flat,1,Reversible defect,0,<60
+55,Female,Typical angina,128,205,0,Left ventricular hypertrophy,130,Yes,2.0,Flat,1,Reversible defect,0,<60
+61,Male,Typical angina,148,203,0,ST-T wave abnormality,161,No,0.0,Downsloping,1,Reversible defect,0,>=60
+58,Male,Typical angina,114,318,0,Left ventricular hypertrophy,140,No,4.4,Upsloping,3,Normal,0,<60
+58,Female,Typical angina,170,225,1,Normal,146,Yes,2.8,Flat,2,Normal,0,<60
+67,Male,Non-anginal pain,152,212,0,Normal,150,No,0.8,Flat,0,Reversible defect,0,>=60
+44,Male,Typical angina,120,169,0,ST-T wave abnormality,144,Yes,2.8,Upsloping,0,Normal,0,<60
+63,Male,Typical angina,140,187,0,Normal,144,Yes,4.0,Downsloping,2,Reversible defect,0,>=60
+63,Female,Typical angina,124,197,0,ST-T wave abnormality,136,Yes,0.0,Flat,0,Fixed defect,0,>=60
+59,Male,Typical angina,164,176,1,Normal,90,No,1.0,Flat,2,Normal,0,<60
+57,Female,Typical angina,140,241,0,ST-T wave abnormality,123,Yes,0.2,Flat,0,Reversible defect,0,<60
+45,Male,Asymptomatic,110,264,0,ST-T wave abnormality,132,No,1.2,Flat,0,Reversible defect,0,<60
+68,Male,Typical angina,144,193,1,ST-T wave abnormality,141,No,3.4,Flat,2,Reversible defect,0,>=60
+57,Male,Typical angina,130,131,0,ST-T wave abnormality,115,Yes,1.2,Flat,1,Reversible defect,0,<60
+57,Female,Atypical angina,130,236,0,Normal,174,No,0.0,Flat,1,Fixed defect,0,<60
+74,Female,Non-anginal pain,120,269,0,Left ventricular hypertrophy,121,Yes,0.2,Flat,1,Reversible defect,0,>=60
+44,Male,Asymptomatic,140,235,0,Left ventricular hypertrophy,180,No,0.0,Flat,0,Reversible defect,0,<60
+61,Male,Atypical angina,134,234,0,Normal,145,No,2.6,Downsloping,2,Reversible defect,1,>=60
+64,Male,Atypical angina,110,211,0,Left ventricular hypertrophy,144,Yes,1.8,Downsloping,0,Reversible defect,0,>=60
+48,Male,Non-anginal pain,130,245,0,Left ventricular hypertrophy,180,No,0.2,Downsloping,0,Reversible defect,0,<60
+54,Female,Non-anginal pain,132,288,1,Left ventricular hypertrophy,159,Yes,0.0,Flat,1,Reversible defect,0,<60
+48,Female,Asymptomatic,130,275,0,Normal,139,No,0.2,Flat,0,Reversible defect,0,<60
+51,Female,Asymptomatic,120,295,0,Left ventricular hypertrophy,157,No,0.6,Flat,0,Reversible defect,0,<60
+71,Female,Asymptomatic,110,265,1,Left ventricular hypertrophy,130,No,0.0,Flat,1,Reversible defect,0,>=60
+37,Female,Asymptomatic,120,215,0,Normal,170,No,0.0,Flat,0,Reversible defect,0,<60
+59,Male,Atypical angina,160,273,0,Left ventricular hypertrophy,125,No,0.0,Flat,0,Reversible defect,1,<60
+42,Male,Asymptomatic,130,180,0,Normal,150,No,0.0,Flat,0,Reversible defect,0,<60
+44,Male,Asymptomatic,130,233,0,Normal,179,Yes,0.4,Flat,0,Reversible defect,0,<60
+58,Male,Asymptomatic,140,211,1,Left ventricular hypertrophy,165,No,0.0,Flat,0,Reversible defect,0,<60
+49,Male,Asymptomatic,118,149,0,Left ventricular hypertrophy,126,No,0.8,Flat,3,Reversible defect,1,<60
+52,Male,Non-anginal pain,128,205,1,Normal,184,No,0.0,Flat,0,Reversible defect,0,<60
+65,Female,Asymptomatic,140,417,1,Left ventricular hypertrophy,157,No,0.8,Flat,1,Reversible defect,0,>=60
+63,Female,Non-anginal pain,140,195,0,Normal,179,No,0.0,Flat,2,Reversible defect,0,>=60
+45,Female,Non-anginal pain,130,234,0,Left ventricular hypertrophy,175,No,0.6,Downsloping,0,Reversible defect,0,<60
+41,Female,Non-anginal pain,105,198,0,Normal,168,No,0.0,Flat,1,Reversible defect,0,<60
+60,Female,Asymptomatic,120,178,1,Normal,96,No,0.0,Flat,0,Reversible defect,0,>=60
+44,Male,Asymptomatic,120,226,0,Normal,169,No,0.0,Flat,0,Reversible defect,0,<60
+60,Female,Atypical angina,150,240,0,Normal,171,No,0.9,Flat,0,Reversible defect,0,>=60
+58,Female,Non-anginal pain,136,319,1,Left ventricular hypertrophy,152,No,0.0,Flat,2,Reversible defect,1,<60
+44,Female,Asymptomatic,118,242,0,Normal,149,No,0.3,Downsloping,1,Reversible defect,0,<60
+47,Male,Asymptomatic,108,243,0,Normal,152,No,0.0,Flat,0,Reversible defect,1,<60
+70,Male,Non-anginal pain,156,245,0,Left ventricular hypertrophy,143,No,0.0,Flat,0,Reversible defect,0,>=60
+76,Female,Asymptomatic,140,197,0,ST-T wave abnormality,116,No,1.1,Downsloping,0,Reversible defect,0,>=60
+39,Female,Asymptomatic,94,199,0,Normal,179,No,0.0,Flat,0,Reversible defect,0,<60
+42,Female,Asymptomatic,120,209,0,Normal,173,No,0.0,Downsloping,0,Reversible defect,0,<60
+56,Male,Non-anginal pain,120,236,0,Normal,178,No,0.8,Flat,0,Reversible defect,0,<60
+41,Male,Asymptomatic,130,214,0,Left ventricular hypertrophy,168,No,2.0,Downsloping,0,Reversible defect,0,<60
+42,Male,Atypical angina,148,244,0,Left ventricular hypertrophy,178,No,0.8,Flat,2,Reversible defect,0,<60
+62,Male,Non-anginal pain,128,208,1,Left ventricular hypertrophy,140,No,0.0,Flat,0,Reversible defect,0,>=60
+41,Female,Non-anginal pain,126,306,0,Normal,163,No,0.0,Flat,0,Reversible defect,0,<60
+59,Male,Non-anginal pain,140,221,0,Normal,164,Yes,0.0,Flat,0,Reversible defect,0,<60
+50,Female,Non-anginal pain,120,244,0,Normal,162,No,1.1,Flat,0,Reversible defect,0,<60
+44,Female,Asymptomatic,108,141,0,Normal,175,No,0.6,Downsloping,0,Reversible defect,0,<60
+51,Male,Asymptomatic,100,222,0,Normal,143,Yes,1.2,Downsloping,0,Reversible defect,0,<60
+45,Female,Non-anginal pain,112,160,0,Normal,138,No,0.0,Downsloping,0,Reversible defect,0,<60
+41,Male,Non-anginal pain,110,235,0,Normal,153,No,0.0,Flat,0,Reversible defect,0,<60
+54,Female,Asymptomatic,135,304,1,Normal,170,No,0.0,Flat,0,Reversible defect,0,<60
+42,Male,Non-anginal pain,120,295,0,Normal,162,No,0.0,Flat,0,Reversible defect,0,<60
+49,Female,Non-anginal pain,134,271,0,Normal,162,No,0.0,Downsloping,0,Reversible defect,0,<60
+65,Female,Asymptomatic,160,360,0,Left ventricular hypertrophy,151,No,0.8,Flat,0,Reversible defect,0,>=60
+54,Female,Asymptomatic,160,201,0,Normal,163,No,0.0,Flat,1,Reversible defect,0,<60
+52,Female,Asymptomatic,136,196,0,Left ventricular hypertrophy,169,No,0.1,Downsloping,0,Reversible defect,0,<60
+52,Male,Non-anginal pain,134,201,0,Normal,158,No,0.8,Flat,1,Reversible defect,0,<60
+67,Female,Asymptomatic,152,277,0,Normal,172,No,0.0,Flat,1,Reversible defect,0,>=60
+34,Female,Non-anginal pain,118,210,0,Normal,192,No,0.7,Flat,0,Reversible defect,0,<60
+51,Male,Atypical angina,125,213,0,Left ventricular hypertrophy,125,Yes,1.4,Flat,1,Reversible defect,0,<60
+41,Female,Asymptomatic,112,268,0,Left ventricular hypertrophy,172,Yes,0.0,Flat,0,Reversible defect,0,<60
+41,Male,Asymptomatic,112,250,0,Normal,179,No,0.0,Flat,0,Reversible defect,0,<60
+50,Female,Asymptomatic,120,219,0,Normal,158,No,1.6,Downsloping,0,Reversible defect,0,<60
+54,Female,Asymptomatic,108,267,0,Left ventricular hypertrophy,167,No,0.0,Flat,0,Reversible defect,0,<60
+51,Female,Asymptomatic,130,256,0,Left ventricular hypertrophy,149,No,0.5,Flat,0,Reversible defect,0,<60
+46,Female,Non-anginal pain,105,204,0,Normal,172,No,0.0,Flat,0,Reversible defect,0,<60
+45,Male,Non-anginal pain,128,308,0,Left ventricular hypertrophy,170,No,0.0,Flat,0,Reversible defect,0,<60
+55,Male,Non-anginal pain,130,262,0,Normal,155,No,0.0,Flat,0,Reversible defect,0,<60
+65,Male,Atypical angina,138,282,1,Left ventricular hypertrophy,174,No,1.4,Downsloping,1,Reversible defect,1,>=60
+69,Male,Atypical angina,160,234,1,Left ventricular hypertrophy,131,No,0.1,Downsloping,1,Reversible defect,0,>=60
+68,Female,Asymptomatic,120,211,0,Left ventricular hypertrophy,115,No,1.5,Downsloping,0,Reversible defect,0,>=60
+34,Male,Atypical angina,118,182,0,Left ventricular hypertrophy,174,No,0.0,Flat,0,Reversible defect,0,<60
+46,Male,Asymptomatic,150,231,0,Normal,147,No,3.6,Downsloping,0,Reversible defect,1,<60
+50,Male,Asymptomatic,129,196,0,Normal,163,No,0.0,Flat,0,Reversible defect,0,<60
+53,Male,Asymptomatic,130,246,1,Left ventricular hypertrophy,173,No,0.0,Flat,3,Reversible defect,0,<60
+43,Male,Asymptomatic,130,315,0,Normal,162,No,1.9,Flat,1,Reversible defect,0,<60
+48,Male,Asymptomatic,124,255,1,Normal,175,No,0.0,Flat,2,Reversible defect,0,<60
+55,Female,Non-anginal pain,135,250,0,Left ventricular hypertrophy,161,No,1.4,Downsloping,0,Reversible defect,0,<60
+54,Female,Asymptomatic,110,214,0,Normal,158,No,1.6,Downsloping,0,Reversible defect,0,<60
+69,Female,Atypical angina,140,239,0,Normal,151,No,1.8,Flat,2,Reversible defect,0,>=60
+60,Female,Asymptomatic,102,318,0,Normal,160,No,0.0,Flat,1,Reversible defect,0,>=60
+51,Male,Asymptomatic,125,245,1,Left ventricular hypertrophy,166,No,2.4,Downsloping,0,Reversible defect,0,<60
+43,Female,Asymptomatic,122,213,0,Normal,165,No,0.2,Downsloping,0,Reversible defect,0,<60
+29,Male,Non-anginal pain,130,204,0,Left ventricular hypertrophy,202,No,0.0,Flat,0,Reversible defect,0,<60
+41,Female,Non-anginal pain,130,204,0,Left ventricular hypertrophy,172,No,1.4,Flat,0,Reversible defect,0,<60
+63,Female,Asymptomatic,135,252,0,Left ventricular hypertrophy,172,No,0.0,Flat,0,Reversible defect,0,>=60
+44,Male,Non-anginal pain,120,220,0,Normal,170,No,0.0,Flat,0,Reversible defect,0,<60
+57,Male,Asymptomatic,150,168,0,Normal,174,No,1.6,Flat,0,Reversible defect,0,<60
+58,Female,Atypical angina,150,283,1,Left ventricular hypertrophy,162,No,1.0,Flat,0,Reversible defect,0,<60
+47,Male,Asymptomatic,138,257,0,Left ventricular hypertrophy,156,No,0.0,Flat,0,Reversible defect,0,<60
+52,Male,Non-anginal pain,120,325,0,Normal,172,No,0.2,Flat,0,Reversible defect,0,<60
+39,Male,Asymptomatic,140,321,0,Left ventricular hypertrophy,182,No,0.0,Flat,0,Reversible defect,0,<60
+51,Female,Asymptomatic,140,308,0,Left ventricular hypertrophy,142,No,1.5,Flat,1,Reversible defect,0,<60
+65,Female,Asymptomatic,155,269,0,Normal,148,No,0.8,Flat,0,Reversible defect,0,>=60
+60,Male,Asymptomatic,140,185,0,Left ventricular hypertrophy,155,No,3.0,Downsloping,0,Reversible defect,1,>=60
+44,Male,Non-anginal pain,130,219,0,Left ventricular hypertrophy,188,No,0.0,Flat,0,Reversible defect,0,<60
+51,Male,Asymptomatic,110,175,0,Normal,123,No,0.6,Flat,0,Reversible defect,0,<60
+59,Male,Asymptomatic,150,212,1,Normal,157,No,1.6,Flat,0,Reversible defect,0,<60
+71,Female,Non-anginal pain,160,302,0,Normal,162,No,0.4,Flat,2,Reversible defect,0,>=60
+61,Male,Asymptomatic,150,243,1,Normal,137,Yes,1.0,Downsloping,0,Reversible defect,0,>=60
+64,Male,Asymptomatic,140,335,0,Normal,158,No,0.0,Flat,0,Reversible defect,1,>=60
+58,Female,Asymptomatic,120,340,0,Normal,172,No,0.0,Flat,0,Reversible defect,0,<60
+58,Male,Non-anginal pain,120,284,0,Left ventricular hypertrophy,160,No,1.8,Downsloping,0,Reversible defect,1,<60
+49,Male,Non-anginal pain,130,266,0,Normal,171,No,0.6,Flat,0,Reversible defect,0,<60
+56,Female,Non-anginal pain,140,294,0,Left ventricular hypertrophy,153,No,1.3,Downsloping,0,Reversible defect,0,<60
+60,Male,Asymptomatic,145,233,1,Normal,150,No,2.3,Upsloping,0,Normal,1,>=60
+35,Male,Non-anginal pain,130,250,0,ST-T wave abnormality,187,No,3.5,Upsloping,0,Fixed defect,1,<60
+55,Male,Atypical angina,120,236,0,ST-T wave abnormality,178,No,0.8,Downsloping,0,Fixed defect,1,<60
+56,Female,Typical angina,120,354,0,ST-T wave abnormality,163,Yes,0.6,Downsloping,0,Fixed defect,1,<60
+55,Male,Typical angina,140,192,0,ST-T wave abnormality,148,No,0.4,Flat,0,Normal,1,<60
+55,Female,Asymptomatic,150,283,1,Normal,162,No,1.0,Downsloping,0,Fixed defect,1,<60
+40,Male,Typical angina,150,247,0,ST-T wave abnormality,171,No,1.5,Downsloping,0,Fixed defect,1,<60
+54,Male,Non-anginal pain,130,263,0,ST-T wave abnormality,97,No,1.2,Flat,1,Reversible defect,0,<60
+60,Male,Typical angina,135,254,0,Normal,127,No,2.8,Flat,1,Reversible defect,0,>=60
+63,Male,Typical angina,150,407,0,Normal,154,No,4.0,Flat,3,Reversible defect,0,>=60
+64,Male,Asymptomatic,138,282,1,Normal,174,No,1.4,Flat,1,Fixed defect,0,>=60
+50,Male,Typical angina,110,239,0,ST-T wave abnormality,126,Yes,2.8,Flat,1,Reversible defect,0,<60
+58,Female,Typical angina,125,300,0,Normal,171,No,0.0,Downsloping,2,Reversible defect,0,<60
+77,Female,Typical angina,125,304,0,Normal,162,Yes,0.0,Downsloping,3,Fixed defect,0,>=60
+70,Female,Non-anginal pain,160,269,0,ST-T wave abnormality,112,Yes,2.9,Flat,1,Reversible defect,0,>=60
+64,Male,Atypical angina,145,212,0,Normal,132,No,2.0,Flat,2,Normal,0,>=60
+56,Male,Atypical angina,132,184,0,Normal,105,Yes,2.1,Flat,1,Normal,0,<60
+43,Female,Asymptomatic,132,247,1,Normal,143,Yes,0.1,Flat,4,Reversible defect,0,<60
+58,Male,Atypical angina,128,259,0,Normal,130,Yes,3.0,Flat,2,Reversible defect,0,<60
+50,Male,Atypical angina,144,200,0,Normal,126,Yes,0.9,Flat,0,Reversible defect,0,<60
+62,Female,Atypical angina,150,244,0,ST-T wave abnormality,154,Yes,1.4,Flat,0,Fixed defect,0,>=60
+52,Male,Typical angina,130,283,1,Normal,103,Yes,1.6,Upsloping,0,Reversible defect,0,<60
+60,Male,Asymptomatic,134,234,0,ST-T wave abnormality,145,No,2.6,Flat,2,Fixed defect,0,>=60
+45,Male,Typical angina,110,275,0,Normal,118,Yes,1.0,Flat,1,Fixed defect,0,<60
+55,Male,Atypical angina,124,261,0,ST-T wave abnormality,141,No,0.3,Downsloping,0,Reversible defect,0,<60
+60,Male,Typical angina,140,207,0,Normal,138,Yes,1.9,Downsloping,1,Reversible defect,0,>=60
+54,Male,Atypical angina,154,232,0,Normal,164,No,0.0,Downsloping,1,Fixed defect,0,<60
+53,Male,Typical angina,110,335,0,ST-T wave abnormality,143,Yes,3.0,Flat,1,Reversible defect,0,<60
