@@ -95,3 +95,42 @@ The resulting dataset can be found in data subfolder and contains anonymized pat
         [1: disease or more chance of heart attack, 0: normal or less chance of heart attack]</li>
 </ul>
 
+# Exploratory Data Analysis (EDA)
+In this section i will explain how i got amazing insights using heart disease dataset.
+
+First of all, it is important to read the csv file to the google colab enviroment in order to start the analysis. I uploaded the file directly from this Github to the Colaboratory using the code below:
+```
+try:
+  df = pd.read_csv(url)
+  print("Successfully read CSV from GitHub")
+  # Now you can work with the DataFrame 'df'
+  print(df.head()) # Example: Display the first few rows
+
+except Exception as e:
+  print(f"An error occurred: {e}")
+
+```
+
+## EDA Checkpoints
+In order to make a good data analysis i have followed some checkpoints. They are described below:
+
+1. Descriptive Statistics:
+   - What is this highest values for each column?
+   - What is the lowest values for each column?
+   - According to the data dictionary, those numbers are correct?
+
+2. Mapping Categorical Columns: Identify and name every categories from categorical column in order to make a understandable analysis later on
+
+3. Dealing with missing values: Here we will identify how many rows are empty in our dataset and how deal with those observations.
+
+4. Removing duplicated rows: Rows that are duplicated in a dataset do not include any information by the end of the day. It is important to remove them from our analysis
+
+5. Plotting Kernel Density Distribution from numerical features: Here things starting to going well. It is time to see how the data is distributed and acquiring more insghits
+
+6. Plotting bar graph from categorical features: On the other hand, categorical features can be analyzed ploting bar graphs
+
+7. Feature selection: is there any other feature combination in order to strenghten our insights? Let's see
+    
+     
+
+
