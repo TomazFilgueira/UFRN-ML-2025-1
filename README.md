@@ -114,26 +114,26 @@ except Exception as e:
 ## EDA Checkpoints
 In order to make a good data analysis i have followed some checkpoints. They are described below:
 
-1. Descriptive Statistics:
+**1. Descriptive Statistics:**
    - What is this highest values for each column?
    - What is the lowest values for each column?
    - According to the data dictionary, those numbers are correct?
 
-2. Mapping Categorical Columns: Identify and name every categories from categorical column in order to make a understandable analysis later on
+**2. Mapping Categorical Columns:** Identify and name every categories from categorical column in order to make a understandable analysis later on
 
-3. Dealing with missing values: Here we will identify how many rows are empty in our dataset and how deal with those observations.
+**3. Dealing with missing values:** Here we will identify how many rows are empty in our dataset and how deal with those observations.
 
-4. Removing duplicated rows: Rows that are duplicated in a dataset do not include any information by the end of the day. It is important to remove them from our analysis
+**4. Removing duplicated rows:** Rows that are duplicated in a dataset do not include any information by the end of the day. It is important to remove them from our analysis
 
-5. Plotting Kernel Density Distribution from numerical features: Here things starting to going well. It is time to see how the data is distributed and acquiring more insghits
+**5. Plotting Kernel Density Distribution from numerical features:** Here things starting to going well. It is time to see how the data is distributed and acquiring more insghits
 
-6. Plotting bar graph from categorical features: On the other hand, categorical features can be analyzed ploting bar graphs
+**6. Plotting bar graph from categorical features:** On the other hand, categorical features can be analyzed ploting bar graphs
 
-7. Feature selection: is there any other feature combination in order to strenghten our insights? Let's see
+**7. Feature engineering:** is there any other feature combination in order to strenghten our insights? Let's see
 
 ## Descriptive Statistics:
 
-From our first checkpoint we used the pd.describe() function so that we can compare the highest and loweste values from the dataframa to the dataset dictionary. Its output is pointed below:
+From our first checkpoint we used the `pd.describe()` function so that we can compare the highest and loweste values from the dataframa to the dataset dictionary. Its output is pointed below:
 ```
         age	        sex	        cp	        trestbps	chol	    fbs	        restecg	    thalachh	exang	    oldpeak	    slope	    ca	        thal	    target
 count	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000
@@ -158,6 +158,88 @@ From the table, we could see that there are three columns with max. value which 
 `thal:` Thalassemia types. Values: 1 = Normal, 2 = Fixed defect, 3 = Reversible defect. **DF Max. values = 07**
 
 In order to correct it, we will use the function map() to set each number a category name. Leaving the actual data highest value out the mapping. Using this strategy will leave the dataframe with **NAN** observations 
-     
+
+## Map categorical Columns
+Some categorical columns are expressed in terms of numbers. In order to better visualization, we will map categorical columns into new labels. Later on, we will create dummies variables.
+
+```
+df["sex"] = df["sex"].map({1: "Male", 0: "Female"})
+df["cp"] = df["cp"].map({0: "Typical angina", 1: "Atypical angina", 2: "Non-anginal pain", 3: "Asymptomatic"})
+df["restecg"] = df["restecg"].map({0: "Normal", 1: "ST-T wave abnormality", 2: "Left ventricular hypertrophy"})
+df["exang"] = df["exang"].map({1: "Yes", 0: "No"})
+df["slope"] = df["slope"].map({0: "Upsloping", 1: "Flat", 2: "Downsloping"})
+df["thal"] = df["thal"].map({1: "Normal", 2: "Fixed defect", 3: "Reversible defect"})
+df.head()
+
+```
+
+## Dealing with missing values (NAN)
+
+Using the method `df.info()` we could se that from those 13 columns, most of all the filled without missing any value. Howevers, in the process of mapping categorical columns it had left some observations with NAN values.
+
+As there were fews observations with missing values i have adopted the strategy of removing all observations with NAN. The process of removal was made using `df.dropna()` method.
+
+After the removal, the dataset was left with 1702 non-null observations.
+
+## Removing duplicated rows
+During the process of Exploratory Data Analysis it is important to elimited duplicated observations throughout the dataset because those rows do not add any information in the classifications problem.
+
+It has been removed **1464** duplicated rows (representing **77.54%** of the initial dataset)
+The reduced dataset now has **424 rows**.
+
+## Plotting Kernel Density Distribution from numerical features:
+Next process in our checkpoint is to analyze Kernel Density Estimate (KDE for short). KDE plot means the probability distribution for each feature in our dataset.
+It is important to bear in mind that KDE plot only makes sense for numerical values.
+
+image...
+
+## Plotting bar graph from categorical features:
+Similarly to numerical values in KDE plot, when analyzing categorical features we should use bar graph.
+There are 7 subplots below, each one represeting a categorical column from our dataset.
+
+image..
+
+## Feature Engineering
+
+In this section i will describe how a combination of existing features can generate other ones. From my conception i always had in mind that heart disease is more likely to happen in elderly people (60 years old or older). Knowing this, it has been creating another categorical column meaning `ELDERLY`. This feature was created using the code below:
+
+```
+df_reduced['elderly'] = df_reduced['age'].apply(lambda x: '>60' if x > 60 else '<60')
+```
+
+Later i used `pd.crosstab()` method from pandas to analyze how data can be correlated when comparting sex (Male/Female) with elderly people (>60 , <60 ) versus target column (likely or unlikely to have heart disease)
+
+`pd.crosstab(df_reduced.target,[df_reduced.sex,df_reduced.elderly],margins=True)`
+
+The output is shown below:
+
+```
+sex	Female	                Male	All
+elderly	<60	>60	<60	>60	
+target					
+0	48	27	129	40	244
+1	52	22	90	16	180
+All	100	49	219	56	424
+```
+
+In the same way the crosstab can be plotted with clustered bar graph:
+
+image...
+
+**Insights:** From the bargraph above surprisingly the dataset shows us the male people is more likely to have heart disease when they are younger than 60 years old!!
+
+From women perspective, we can see that there are the same amount of individuals which had and had not a heart disease, comparing women younger thab 60 year old.
+
+## Plot Correlation Matrix:
+Correlation matrix is important to understand how other features are strong or weak linked with our target variable: likely or not likely to have a heart disease.
+The closer correlation number to absolute 1, the stronger this feature is linked to our target. Meaning that when the feature grows, more likely to have heart disease.
+
+Correlation Matrix is shown below:
+
+image..
+
+**insights:** Despite only two features (`thalachh` and `oldpeaks`) have highest correlation with target columns (**0.26** and **-0.24** respectively) we will use all those numerical columns in our classification problem.
+
+
 
 
