@@ -130,7 +130,34 @@ In order to make a good data analysis i have followed some checkpoints. They are
 6. Plotting bar graph from categorical features: On the other hand, categorical features can be analyzed ploting bar graphs
 
 7. Feature selection: is there any other feature combination in order to strenghten our insights? Let's see
-    
+
+## Descriptive Statistics:
+
+From our first checkpoint we used the pd.describe() function so that we can compare the highest and loweste values from the dataframa to the dataset dictionary. Its output is pointed below:
+```
+        age	        sex	        cp	        trestbps	chol	    fbs	        restecg	    thalachh	exang	    oldpeak	    slope	    ca	        thal	    target
+count	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000	1888.000000
+mean	54.354343	0.688559	1.279131	131.549258	246.855403	0.148305	0.597458	149.424258	0.331568	1.053761	1.421610	0.731462	2.662606	0.517479
+std	    9.081505	0.463205	1.280877	17.556985	51.609329	0.355496	0.638820	23.006153	0.470901	1.161344	0.619588	1.015735	1.249924	0.499827
+min	    29.000000	0.000000	0.000000	94.000000	126.000000	0.000000	0.000000	71.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000
+25%	    47.750000	0.000000	0.000000	120.000000	211.000000	0.000000	0.000000	133.000000	0.000000	0.000000	1.000000	0.000000	2.000000	0.000000
+50%	    55.000000	1.000000	1.000000	130.000000	241.000000	0.000000	1.000000	152.000000	0.000000	0.800000	1.000000	0.000000	2.000000	1.000000
+75%	    61.000000	1.000000	2.000000	140.000000	276.000000	0.000000	1.000000	166.000000	1.000000	1.600000	2.000000	1.000000	3.000000	1.000000
+max	    77.000000	1.000000	4.000000	200.000000	564.000000	1.000000	2.000000	202.000000	1.000000	6.200000	3.000000	4.000000	7.000000	1.000000
+
+```
+
+From the table, we could see that there are three columns with max. value which are not expected in the data dictionary. Those columns are:
+
+`cp:` Chest pain type. Values: 0 = Typical angina, 1 = Atypical angina, 2 = Non-anginal pain, 3 = Asymptomatic. - **df Max Value = 04**
+
+`slope:` Slope of the peak exercise ST segment. Values: 0 = Upsloping, 1 = Flat, 2 = Downsloping. . **DF max values = 03**
+
+`ca:` Number of major vessels (0-3) colored by fluoroscopy. Values: 0, 1, 2, 3. **DF max. value = 04**
+
+`thal:` Thalassemia types. Values: 1 = Normal, 2 = Fixed defect, 3 = Reversible defect. **DF Max. values = 07**
+
+In order to correct it, we will use the function map() to set each number a category name. Leaving the actual data highest value out the mapping. Using this strategy will leave the dataframe with **NAN** observations 
      
 
 
