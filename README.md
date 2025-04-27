@@ -65,6 +65,8 @@ Merging these data sets provides a more robust foundation for training machine l
 
 The resulting dataset can be found in data subfolder and contains anonymized patient records with various features, such as age, cholesterol levels, and blood pressure, which are crucial for predicting heart attack and stroke risks, covering both medical and demographic factors.
 
+---
+
 ### Features Description:
 <ul>
     <li><strong>age</strong>: age of the patient 
@@ -96,6 +98,9 @@ The resulting dataset can be found in data subfolder and contains anonymized pat
     <li><strong>target</strong>: outcome variable for heart attack risk 
         [1: disease or more chance of heart attack, 0: normal or less chance of heart attack]</li>
 </ul>
+
+
+---
 
 # Exploratory Data Analysis (EDA)
 In this section i will explain how i got amazing insights using heart disease dataset.
@@ -241,6 +246,8 @@ Correlation Matrix is shown below:
 ![Alt text](image/corr_heart_diesase.png)
 
 **insights:** Despite only two features (`thalachh` and `oldpeaks`) have highest correlation with target columns (**0.26** and **-0.24** respectively) we will use all those numerical columns in our classification problem.
+
+---
 
 # Classification Heart Disease
 In this section we will walk through all the way to the process of classification heart disesase with our model
@@ -401,6 +408,8 @@ Our model metrics are displayed below:
 
 ![Alt text](image/all_metrics.png)
 
+---
+
 # Model 1 Conclusion
 
 The first model was configurated using these parameters below:
@@ -429,6 +438,8 @@ For model 1 and using a threshold limiter of 0.5 we got False Negative Number of
 It seems low, right? but even lower the better. Can we decrease even more this number?
 
 From mode 1 we have used the whole heart desease dataset. However, during our EDA phase it has been identified that some feature can iteract more with our target column than the other. Let's filter our dataset with this "best features"
+
+---
 
 # Model 2
 From now on we will be using the "selected" dataset. Here will be using numerical features with correlation greater than 0.2 with compared to target column. Besides we will be still using all categorical features as presented before.
@@ -491,6 +502,8 @@ However we can decrease even more this number if we see the confusion matrix fro
 
 What if we reduce the threshold value from 0.5 to 0.4?
 
+---
+
 # Comparing models with threshold of 0.4
 
 First let's plot confusion matrix of model 1 and its metrics:
@@ -504,6 +517,8 @@ An then let's analyze model 2 metrics with threshold of 0.4:
 ![Alt text](image/confusion_matrix_model2_0.4.png)
 
 ![Alt text](image/all_metrics_model2_04.png)
+
+---
 
 # Project Conclusion
 After comparing models with 0.4 threshold we could see that both behave similarly. In other word, both models give the same metrics.
