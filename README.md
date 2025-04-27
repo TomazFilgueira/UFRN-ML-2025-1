@@ -343,7 +343,7 @@ Starting with the following hyper-parameters:
 * Optimizer: Stochastic Gradient Descent
 * Loss Function: Binary-Cross Entropy with Logit Loss. This loss function is widely used in classification problems because its output means logit that can be used for determining a probability of an event to happen
 
-## 3 and 4) Training/Validation
+## 3) Training/Validation
 
 The code below represents the calling for training and validating our model using `Architecture()` class. It receives as parameters the model itself, the loss function configured before and Optimizer.
 
@@ -362,7 +362,82 @@ arch.train(n_epochs)
 
 The next figure represents the model output for train anda validating loss function.
 
-![Alt text](train_validation_loss/.png)
+![Alt text](image/train_validation_loss.png)
+
+From the figure above we can see the lines of training and validation loss.
+
+It is ease to see that our model did not overfitted because the error of train/validation remained similar throughout the epochs. However, the validation error itself can be optimized.
+
+## 4) Metrics
+In this part we will analyze how good were the predictions of our model.
+
+First of all let's plot the confusion matrix and see the 4 quadrants represents by True Negative (TN), False Positive (FP), False Negative (FN), True Positive (TP):
+
+![Alt text](image/confusion_matrix.png)
+
+Some important metrics when analyzing classifications problems are True and False Positive Rates (TPR/FPR); Precision and Recall; and Accuracy. Each metrics is represented by its formula below:
+
+True and False Positive Ratio
+----------------------------
+$$
+\Large \text{TPR} = \frac{\text{TP}}{\text{TP + FN}} \ \ \  \text{FPR} = \frac{\text{FP}}{\text{FP + TN}}
+$$
+
+Precion and Recall
+----------------------------
+$$
+\Large \text{Recall} = \frac{\text{TP}}{\text{TP + FN}} \ \ \  \text{Precision} = \frac{\text{TP}}{\text{TP + FP}}
+$$
+
+Accuracy
+----------------------------
+$$
+\Large \text{Accuracy} = \frac{\text{TP+TN}}{\text{TP+TN+FP+FN}}
+$$
+
+We can use `accuracy_score()` method directly from Sklearn
+
+Our model metrics are displayed below:
+
+![Alt text](image/all_metrics.png)
+
+# Model 1 Conclusion
+
+The first model was configurated using these parameters below:
+
+  * lr = 0.05
+  * train/val split ratio = 0.2
+  * number of epochs = 200
+  * Optimizer: SGD 
+
+With this configuration we got the results from the confusion matrix and bar graph above:
+
+  1. Precision Metrics: 0.75
+
+  1. Recall Metrics: 0.833
+
+  1. Accuracy score 0.812
+
+  1. True Positive Rate:0.833
+
+  1. False Positive Rate:0.204
+
+More over, knowing that Heart disease identification is a sensible matter we have to bear in mind the **False Negative** number which means that an individual has a heart problem and our model did not identified properly, leaving the person in serious risk!
+
+For model 1 and using a threshold limiter of 0.5 we got False Negative Number of 6 misclassication. 
+
+It seems low, right? but even lower the better. Can we decrease even more this number?
+
+From mode 1 we have used the whole heart desease dataset. However, during our EDA phase it has been identified that some feature can iteract more with our target column than the other. Let's filter our dataset with this "best features"
+
+
+
+
+
+
+
+
+
 
 
 
