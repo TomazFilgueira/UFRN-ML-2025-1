@@ -491,6 +491,45 @@ However we can decrease even more this number if we see the confusion matrix fro
 
 What if we reduce the threshold value from 0.5 to 0.4?
 
+# Comparing models with threshold of 0.4
+
+First let's plot confusion matrix of model 1 and its metrics:
+
+![Alt text](image/confusion_matrix_0.4.png)
+
+![Alt text](image/all_metrics_04.png)
+
+An then let's analyze model 2 metrics with threshold of 0.4:
+
+![Alt text](image/confusion_matrix_model2_0.4.png)
+
+![Alt text](image/all_metrics_model2_04.png)
+
+# Project Conclusion
+After comparing models with 0.4 threshold we could see that both behave similarly. In other word, both models give the same metrics.
+
+Both models gives us the following output during the validation set:
+
+- `Precision` :  0.7727
+- `Recall` :  0.9444
+- `Accuracy` :  0.8588
+- `True Positive Ratio` : 0.9444
+- `False Positive Ratio`: 0.2041
+- `False negative number`: 2 individuals
+
+
+
+However the second model tends to be better because it has less features when compared to the first one. Hence we will choose the **model 2 to put in production**
+
+
+
+
+
+
+
+
+
+
 
 
 
