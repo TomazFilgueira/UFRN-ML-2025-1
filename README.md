@@ -430,6 +430,75 @@ It seems low, right? but even lower the better. Can we decrease even more this n
 
 From mode 1 we have used the whole heart desease dataset. However, during our EDA phase it has been identified that some feature can iteract more with our target column than the other. Let's filter our dataset with this "best features"
 
+# Model 2
+From now on we will be using the "selected" dataset. Here will be using numerical features with correlation greater than 0.2 with compared to target column. Besides we will be still using all categorical features as presented before.
+ 
+The features of this dataset are:
+
+**categorical_cols**
+
+ - sex
+ - cp
+ - restecg
+ - exang
+ - slope
+ - thal
+ - elderly
+
+**Numerical** 
+ - Oldpeak
+ - Thalachh
+
+The same process of model 1 preparation was done to the second as well. It means we took our csv file containing selected features, create dummies for categorical variables, and splot the data into train/validation set with ratio of 0.2 (same as before).
+
+In order to compare with model 1 we have used the same hyper-parameters:
+
+* lr = 0.05
+* train/val split ratio = 0.2
+* number of epochs = 200
+* Optimizer: SGD
+
+## Training/Validating model 2
+
+The figure below represents the train/validation process of model 2 which looks very similar to the first model
+
+![Alt text](image/train_validation_loss2.png)
+
+## Metrics for model 2
+In the same way, we have plot Confusion Matrix portrayed below:
+
+![Alt text](image/confusion_matrix_model2.png)
+
+Model 2 and its configuration got us some metrics:
+
+![Alt text](image/all_metrics_model2.png)
+
+We can see that using the same configuration of model 1 but using selected feature we had a little bit increase in all metrics except in False Positive Ratio.
+
+Here is a summary of the changes:
+
+- `Precision` : 1,59% increase. Reaching 0.7619
+- `Recall` : 6,67% increase. Reaching 0.8889
+- `Accuracy` : 2,90% increase. Reaching 0.8353
+- `True Positive Ratio` : 6,67%. Reaching 0.8889
+- `False Positive Ratio` did not have any change
+
+![Alt text](image/models_comparision.png)
+
+Moreover, when analyzing the False Negative Number it decrease from **6** people in first model to **4** in model 2. It is a satisfatory model!
+
+However we can decrease even more this number if we see the confusion matrix from model 2.
+
+What if we reduce the threshold value from 0.5 to 0.4?
+
+
+
+
+
+
+
+   
+
 
 
 
