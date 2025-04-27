@@ -32,8 +32,10 @@ Key features include:
 Heart-Disease-App/
 │
 ├── data/                          # Contains the dataset
-├── train.py                       # Script for training and saving the model
-├── predict.py                     # Web service for serving the model
+├── data_preparation               # Scripts for creating pytorch tensors
+├── model_configuration            # configure sequencial linear models
+├── model_training                 # script for train model    
+├── images                         # Contains images generates by model ouputs
 └── README.md                      # Project description and instructions
 ```
 
@@ -239,6 +241,134 @@ Correlation Matrix is shown below:
 ![Alt text](image/corr_heart_diesase.png)
 
 **insights:** Despite only two features (`thalachh` and `oldpeaks`) have highest correlation with target columns (**0.26** and **-0.24** respectively) we will use all those numerical columns in our classification problem.
+
+# Classification Heart Disease
+In this section we will walk through all the way to the process of classification heart disesase with our model
+
+Thi first lines of code is to import necessary libraries and classes that will be used in some moment of our project. For example, we have some class that will plot properly confusion matrix and metrics. Other important class is `Architecture()`. This class will be extremely import to receive a model and then train and validate it using Pytorch framework.
+
+After this points we will pass for a series of checkpoint in order to get our dataset classified using Pytorch.
+
+Those checkpoints are:
+
+1.  Data Preparation:
+        * Create dummy variables
+        * Creator tensors
+        * build train and validation dataset/dataloader
+
+2. Configure Model: determine some parameters:
+      * Which model should we use to classify binary output?
+      * Defines Stocastic Gradient Descent
+      * Defines a loss function to classification
+
+3. Train the model itself using `Architeture()` class
+
+4. Validate the Model:
+      * is the model accurate to our problem?
+      * Let's evaluate some metrics such as:
+        - Recall/Precision
+        - Accuracy
+        - True and False Positive Rates
+
+5. Make Predictions
+
+## 1. Data Preparation
+Most of work has been done during the EDA parts. However, something must be adapted in order to our classify works properly
+
+First we need to convert categorical features into dummy ones using the code below:
+```
+# Create dummy variables for categorical features
+categorical_cols = ['sex','cp', 'restecg', 'exang', 'slope','thal','elderly']
+df_dummy = pd.get_dummies(df, columns=categorical_cols, drop_first=True)
+print(df_dummy.shape)
+```
+
+Next, it is necessary to create tensor and send to the GPU device.
+
+```
+# Define features (X) and target (y)
+X = df_dummy.drop('target', axis=1).values
+y = df_dummy['target'].values
+
+# Split data into training and validation sets while maintaining target proportion
+X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42, stratify=df_dummy['target'])
+
+# Scale features using StandardScaler
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_val = scaler.transform(X_val)
+
+# Convert data to PyTorch tensors
+X_train_tensor = torch.tensor(X_train, dtype=torch.float32)
+y_train_tensor = torch.tensor(y_train, dtype=torch.float32).reshape(-1, 1)  # Reshape for single output
+X_val_tensor = torch.tensor(X_val, dtype=torch.float32)
+y_val_tensor = torch.tensor(y_val, dtype=torch.float32).reshape(-1, 1)
+
+# Create TensorDatasets
+train_dataset = TensorDataset(X_train_tensor, y_train_tensor)
+val_dataset = TensorDataset(X_val_tensor, y_val_tensor)
+
+# Create DataLoaders in mini_batch type with 16 observations
+train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=16, shuffle=False)
+```
+
+One of the biggest mistakes in classification problem is to let train and validation dataset with disproportional values of our target column.
+
+because of that we will calculate the proportion of target in the main dataset and will leave with same ratio in train and validation division.
+
+The whole dataset is composed by the ratio below:
+	    
+target | proportion
+------ | ------------
+0	  |  0.575472
+1	  |  0.424528
+
+Whereas the proportion of true values in the target train and validation are:
+
+ y_train= 0.42
+
+ y_val = 0.42
+
+ The proportion of true values in train and validation dataset is the same of the original dataframe
+
+ ## 2) Configure Model
+
+ In this section we will configure our classification model.
+
+Starting with the following hyper-parameters:
+
+* lr = 0.05
+* model: linear with 19 predictors (dataset features exluding target column)
+* Optimizer: Stochastic Gradient Descent
+* Loss Function: Binary-Cross Entropy with Logit Loss. This loss function is widely used in classification problems because its output means logit that can be used for determining a probability of an event to happen
+
+## 3 and 4) Training/Validation
+
+The code below represents the calling for training and validating our model using `Architecture()` class. It receives as parameters the model itself, the loss function configured before and Optimizer.
+
+The number of epochs was set to 200 loops.
+
+```
+#set number of epochs
+n_epochs = 200
+
+#using Architecture class passing model, loss and optimized as parameters
+arch = Architecture(model, loss_fn, optimizer)
+arch.set_loaders(train_loader, val_loader)
+arch.set_seed(42)
+arch.train(n_epochs)
+```
+
+The next figure represents the model output for train anda validating loss function.
+
+![Alt text](train_validation_loss/.png)
+
+
+
+
+
+
 
 
 
