@@ -10,12 +10,12 @@ This project focuses on predicting heart disease using machine learning models. 
 2. [📁 Directory Structure](#-directory-structure)
 3. [❓ Problem Description](#-problem-description)
 4. [🔢 Exploratory Data Analysis-EDA](#eda-checkpoints)
-5. [🔢 Classification Heart Disease](#classification-heart-disease)
-6. [Model 1 Conclusion](#model-1-conclusion)
-7. [Model 2 Implementation](#model-2)
-8. [Metrics for model 2](#metrics-for-model-2)
-9. [Comparing models with different threshold](#comparing-models-with-different-threshold)
-10. [Project Conclusion](#project-conclusion)
+5. [❤️ Classification Heart Disease](#classification-heart-disease)
+6. [☝️  Model 1 Conclusion](#model-1-conclusion)
+7. [✌️ Model 2 Implementation](#model-2)
+8. [⚡Metrics for model 2](#metrics-for-model-2)
+9. [☝️✌️Comparing models with different threshold](#comparing-models-with-different-threshold)
+10. [🏁Project Conclusion](#project-conclusion)
 
 
 ---
