@@ -268,11 +268,15 @@ After this points we will pass for a series of checkpoint in order to get our da
 Those checkpoints are:
 
 1.  Data Preparation:
-        * Create dummy variables
-        * Creator tensors
-        * build train and validation dataset/dataloader
+    
+	* Create dummy variables
+
+	* Creator tensors
+
+	* build train and validation dataset/dataloader
 
 2. Configure Model: determine some parameters:
+   
       * Which model should we use to classify binary output?
       * Defines Stocastic Gradient Descent
       * Defines a loss function to classification
@@ -280,6 +284,7 @@ Those checkpoints are:
 3. Train the model itself using `Architeture()` class
 
 4. Validate the Model:
+   
       * is the model accurate to our problem?
       * Let's evaluate some metrics such as:
         - Recall/Precision
@@ -424,8 +429,11 @@ Our model metrics are displayed below:
 The first model was configurated using these parameters below:
 
   * lr = 0.05
+    
   * train/val split ratio = 0.2
+    
   * number of epochs = 200
+    
   * Optimizer: SGD 
 
 With this configuration we got the results from the confusion matrix and bar graph above:
@@ -474,8 +482,11 @@ The same process of model 1 preparation was done to the second as well. It means
 In order to compare with model 1 we have used the same hyper-parameters:
 
 * lr = 0.05
+  
 * train/val split ratio = 0.2
+  
 * number of epochs = 200
+  
 * Optimizer: SGD
 
 ## Training/Validating model 2
