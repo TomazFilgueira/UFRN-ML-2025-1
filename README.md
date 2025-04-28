@@ -473,7 +473,7 @@ In order to compare with model 1 we have used the same hyper-parameters:
 
 The figure below represents the train/validation process of model 2 which looks very similar to the first model
 
-![Alt text](image/train_validation_loss2.png)
+![Alt text](image/train_validation_loss_model2.png)
 
 ## Metrics for model 2
 In the same way, we have plot Confusion Matrix portrayed below:
