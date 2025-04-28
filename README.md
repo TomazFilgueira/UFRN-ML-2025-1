@@ -513,7 +513,11 @@ What if we reduce the threshold value from 0.5 to 0.4?
 
 # Comparing models with different threshold
 
-First let's plot confusion matrix of model 1 and its metrics:
+By default classification problems generaly use a probability of 0.5 as a separator liner between classes. In other words, proababilities highers than 0.5 are classified as positive class, whereas probabilities lower than threshold are classified as negative class.
+
+Let's analyze how those models behave using a different threhsold other than the default. Now are using a value of 0.4.
+
+Firstly, the figures below potray a confusion matrix of model 1 and its metrics:
 
 ![Alt text](image/confusion_matrix_0.4.png)
 
