@@ -9,7 +9,13 @@ This project focuses on predicting heart disease using machine learning models. 
 1. [📌 Project Overview](#-project-overview)
 2. [📁 Directory Structure](#-directory-structure)
 3. [❓ Problem Description](#-problem-description)
-4. [❓ Exploratory Data Analysis-EDA](#eda-checkpoints)
+4. [🔢 Exploratory Data Analysis-EDA](#eda-checkpoints)
+5. [🔢 Classification Heart Disease](#classification-heart-disease)
+6. [Model 1 Conclusion](#model-1-conclusion)
+7. [Model 2 Implementation](#model-2)
+8. [Metrics for model 2](#metrics-for-model-2)
+9. [Comparing models with threshold of 0.4](#comparing-models-with-threshold-of-0.4)
+10. [Project Conclusion](#project-conclusion)
 
 
 ---
@@ -30,7 +36,7 @@ Key features include:
 ## 📁 Directory Structure
 
 ```plaintext
-Heart-Disease-App/
+Heart-Disease-Classification/
 │
 ├── data/                          # Contains the dataset
 ├── data_preparation               # Scripts for creating pytorch tensors
