@@ -9,7 +9,7 @@ This project focuses on predicting heart disease using machine learning models. 
 1. [📌 Project Overview](#-project-overview)
 2. [📁 Directory Structure](#-directory-structure)
 3. [❓ Problem Description](#-problem-description)
-4. [❓ Exploratory Data Analysis-EDA](eda-checkpoints])
+4. [❓ Exploratory Data Analysis-EDA](#eda-checkpoints)
 
 
 ---
