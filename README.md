@@ -9,6 +9,7 @@ This project focuses on predicting heart disease using machine learning models. 
 1. [📌 Project Overview](#-project-overview)
 2. [📁 Directory Structure](#-directory-structure)
 3. [❓ Problem Description](#-problem-description)
+4. [❓ Exploratory Data Analysis-EDA](eda-checkpoints])
 
 
 ---
@@ -102,7 +103,7 @@ The resulting dataset can be found in data subfolder and contains anonymized pat
 
 ---
 
-# Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 In this section i will explain how i got amazing insights using heart disease dataset.
 
 First of all, it is important to read the csv file to the google colab enviroment in order to start the analysis. I uploaded the file directly from this Github to the Colaboratory using the code below:
