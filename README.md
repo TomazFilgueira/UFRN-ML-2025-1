@@ -28,8 +28,8 @@ Key features include:
 - 🧹 Data preparation and cleaning.  
 - 🔍 Exploratory Data Analysis (EDA) to uncover patterns and relationships.  
 - 🧠 Model training, evaluation, and parameter optimization.  
-- 🌐  
-- ☁️  
+- 🌐 Comparing models
+- ☁️ Change hyper parameters
 
 ---
 
