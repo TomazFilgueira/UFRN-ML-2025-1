@@ -14,7 +14,7 @@ This project focuses on predicting heart disease using machine learning models. 
 6. [Model 1 Conclusion](#model-1-conclusion)
 7. [Model 2 Implementation](#model-2)
 8. [Metrics for model 2](#metrics-for-model-2)
-9. [Comparing models with threshold of 0.4](#comparing-models-with-threshold-of-0.4)
+9. [Comparing models with different threshold](#comparing-models-with-different-threshold)
 10. [Project Conclusion](#project-conclusion)
 
 
@@ -511,7 +511,7 @@ What if we reduce the threshold value from 0.5 to 0.4?
 
 ---
 
-# Comparing models with threshold of 0.4
+# Comparing models with different threshold
 
 First let's plot confusion matrix of model 1 and its metrics:
 
