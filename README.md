@@ -38,12 +38,14 @@ Key features include:
 ```plaintext
 Heart-Disease-Classification/
 │
-├── data/                          # Contains the dataset
-├── data_preparation               # Scripts for creating pytorch tensors
-├── model_configuration            # configure sequencial linear models
-├── model_training                 # script for train model    
-├── images                         # Contains images generates by model ouputs
-└── README.md                      # Project description and instructions
+├── data/                          	# Contains the dataset
+├── data_preparation               	# Scripts for creating pytorch tensors
+├── model_configuration            	# configure sequencial linear models
+├── model_training                 	# script for train model    
+├── images                         	# Contains images generates by model ouputs
+├── EDA.ipynp                         	# Jupyter notebook with Exploratory Data Analysis
+├── heart_disease_classification.ipynb  # Jupyter notebook using model 1 and 2 for classification
+└── README.md                      	# Project description and instructions
 ```
 
 ---
