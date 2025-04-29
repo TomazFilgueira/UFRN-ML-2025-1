@@ -1,0 +1,47 @@
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches  # Import patches for highlighting
+
+clf = LazyClassifier(verbose=0, ignore_warnings=True, custom_metric=None)
+models, predictions = clf.fit(X_train, X_val, y_train, y_val)
+
+print(models)
+
+def plot_lazy_model_metrics(models):
+    """Plots bar graph of metrics from LazyClassifier results.
+
+    Args:
+        models: DataFrame of model metrics from LazyClassifier.fit().
+    """
+
+    metrics = ['Accuracy', 'Balanced Accuracy', 'ROC AUC']
+    fig, axes = plt.subplots(len(metrics), 1, figsize=(10, 6 * len(metrics)))
+
+    for i, metric in enumerate(metrics):
+        ax = axes[i]  # Get the current subplot axis
+        models.sort_values(by=metric, ascending=False).plot(kind='bar', y=metric, ax=ax)
+        ax.set_title(f"Models Performance - {metric}")
+        ax.set_xlabel("")
+        ax.set_ylabel(metric)
+        ax.tick_params(axis='x', rotation=90, labelsize=8)
+        ax.grid(visible=None)
+        ax.legend().remove()
+
+        # Highlight Logistic Regression bar
+        if metric in models.columns:  # Check if metric exists in DataFrame
+            try:
+                # Find the x-coordinate of Logistic Regression bar
+                x_coord = models.index.get_loc('LogisticRegression')
+
+                # Create a rectangle patch for highlighting
+                rect = patches.Rectangle((x_coord - 0.4, 0.009), 0.8, models.loc['LogisticRegression', metric],
+                                        linewidth=2, edgecolor='red', facecolor='none')
+
+                # Add the rectangle patch to the subplot
+                ax.add_patch(rect)
+            except KeyError:
+                pass  # Handle case where LogisticRegression is not in models
+
+    plt.tight_layout()
+    plt.show()
+
+plot_lazy_model_metrics(models)
