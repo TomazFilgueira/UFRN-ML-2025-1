@@ -560,8 +560,26 @@ Both models gives us the following output during the validation set:
 
 However the second model tends to be better because it has less features when compared to the first one. Hence we will choose the **model 2 to put in production**
 
+## Miscelaneous
+
+After deciding that we will put model 2 to production we have compared how our current model behaves with other ones. e.g. RandonForest or SVC.
+
+Using the LazyPredict library and 3 lines of code it had been possible to execute that comparation:
+
+```
+clf = LazyClassifier(verbose=0, ignore_warnings=True, custom_metric=None)
+models, predictions = clf.fit(X_train, X_val, y_train, y_val)
+
+print(models)
+
+```
+
+The output is portrayed below:
 
 
+![Alt text](image/output_lazy_model.png)
+
+The red bar represents our the logist regression model which has the same metrics as mentioned in this project before. The Lazy Predict library shows us that the best model for our model could be the ``Quadradict Discriminant Analysis`` with accuracy of 0.88. slightly higher than the logist regression.
 
 
 
