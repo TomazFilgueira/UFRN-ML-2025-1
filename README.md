@@ -579,7 +579,7 @@ The output is portrayed below:
 
 ![Alt text](image/output_lazy_model.png)
 
-The red bar represents our the logist regression model which has the same metrics as mentioned in this project before. The Lazy Predict library shows us that the best model for our model could be the ``Quadradict Discriminant Analysis``
+The red bar represents our the logist regression model which has the same metrics as mentioned in this project before. The Lazy Predict library shows us that the best model for our model could be the ``Quadradict Discriminant Analysis`` with accuracy of 0.88. slightly higher than the logist regression.
 
 
 
